@@ -1,7 +1,7 @@
 {
   "name": "gatsby-plugin-sitemap-ehd",
   "description": "Gatsby plugin that automatically creates a sitemap for your site",
-  "version": "5.20.0-ehd",
+  "version": "5.20.01-ehd",
   "contributors": [
     "Alex Moon <alex.jared.moon@gmail.com>",
     "Nicholas Young <nicholas@nicholaswyoung.com>"
