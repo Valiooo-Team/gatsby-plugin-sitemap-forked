@@ -1,7 +1,7 @@
 {
   "name": "gatsby-plugin-sitemap-ehd",
   "description": "Gatsby plugin that automatically creates a sitemap for your site",
-  "version": "5.20.01-ehd",
+  "version": "5.20.02-ehd",
   "contributors": [
     "Alex Moon <alex.jared.moon@gmail.com>",
     "Nicholas Young <nicholas@nicholaswyoung.com>"
@@ -10,17 +10,17 @@
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
   "dependencies": {
-    "@babel/runtime": "^7.15.4",
+    "@babel/runtime": "^7.20.13",
     "common-tags": "^1.8.2",
     "minimatch": "^3.1.2",
-    "sitemap": "^7.0.0"
+    "sitemap": "^7.1.1"
   },
   "devDependencies": {
-    "@babel/cli": "^7.15.4",
-    "@babel/core": "^7.15.5",
-    "babel-preset-gatsby-package": "^2.20.0",
+    "@babel/cli": "^7.20.7",
+    "@babel/core": "^7.20.12",
+    "babel-preset-gatsby-package": "^3.7.0",
     "cross-env": "^7.0.3",
-    "gatsby-plugin-utils": "^3.14.0"
+    "gatsby-plugin-utils": "^4.7.0"
   },
   "homepage": "https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-plugin-sitemap#readme",
   "keywords": [
@@ -30,9 +30,9 @@
   "license": "MIT",
   "main": "index.js",
   "peerDependencies": {
-    "gatsby": "^4.0.0-next",
-    "react": "^16.9.0 || ^17.0.0 || ^18.0.0",
-    "react-dom": "^16.9.0 || ^17.0.0 || ^18.0.0"
+    "gatsby": "^5.0.0",
+    "react": "^18.0.0 || ^0.0.0",
+    "react-dom": "^18.0.0 || ^0.0.0"
   },
   "repository": {
     "type": "git",
@@ -41,12 +41,13 @@
   },
   "scripts": {
     "build": "babel src --out-dir . --ignore \"**/__tests__\"",
+    "prepare": "cross-env NODE_ENV=production npm run build",
     "watch": "babel -w src --out-dir . --ignore \"**/__tests__\"",
     "test": "jest",
     "test:watch": "jest --watch"
   },
   "engines": {
-    "node": ">=14.15.0"
+    "node": ">=18.0.0"
   },
-  "gitHead": "3ec74acade17fe80c6281c7d0caf52a78a018810"
+  "gitHead": "5d64c3e84b91277f7f86b544b1e2e6447da50770"
 }
